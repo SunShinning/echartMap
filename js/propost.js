@@ -65,27 +65,27 @@ option = {
                 }
             },
             data:[
-            {name: '成都市',value: '66511' },
-                {name: '自贡市',value: '43' },
+                {name: '成都市',value: '286464' },
+                {name: '自贡市',value: '1686' },
                 {name: '攀枝花市',value: 0  },
-                {name: '泸州市',value: '3' },
-                {name: '德阳市',value: '35' },
-                {name: '绵阳市',value: '362' },
-                {name: '广元市',value: '0' },
-                {name: '遂宁市',value: '40' },
-                {name: '内江市',value: '22' },
-                {name: '乐山市',value: '14' },
-                {name: '南充市',value: '29' },
-                {name: '眉山市',value: '14' },
-                 {name: '宜宾市',value: '5' },
-                {name: '广安市1',value: '5' },
-                {name: '达州市',value: '0' },
-                {name: '雅安市',value: '2' },
-                {name: '巴中市',value: '3' },
-                {name: '资阳市',value: '5' },
+                {name: '泸州市',value: '0' },
+                {name: '德阳市',value: '5599' },
+                {name: '绵阳市',value: '4939' },
+                {name: '广元市',value: '2816' },
+                {name: '遂宁市',value: '8083' },
+                {name: '内江市',value: '0' },
+                {name: '乐山市',value: '2282' },
+                {name: '南充市',value: '0' },
+                {name: '眉山市',value: '1740' },
+                 {name: '宜宾市',value: '0' },
+                {name: '广安市1',value: '1825' },
+                {name: '达州市',value: '4283' },
+                {name: '雅安市',value: '790' },
+                {name: '巴中市',value: '0' },
+                {name: '资阳市',value: '15064' },
               {name: '阿坝藏族羌族自治州',value: '0' },
                 {name: '甘孜藏族自治州',value:'0'},
-                {name: '凉山彝族自治州',value: '4' }
+                {name: '凉山彝族自治州',value: '3814' }
             ]
         },
         {
@@ -101,32 +101,29 @@ option = {
                 }
             },
             data:[
-               
+                {name: '成都市',value: '44310' },
+                {name: '自贡市',value: '510' },
+                {name: '攀枝花市',value: '0' },
+                {name: '泸州市',value: '134' },
+                {name: '德阳市',value: '6549' },
+                {name: '绵阳市',value: '0' },
+                {name: '广元市',value: '707' },
+                {name: '遂宁市',value: '936' },
+                {name: '内江市',value: '486'},
+                {name: '乐山市',value: '0' },
+                {name: '南充市',value: '0'},
+                {name: '眉山市',value: '0' },
 
-
-                  {name: '成都市',value: '32307' },
-                {name: '自贡市',value: '86' },
-                {name: '攀枝花市',value: '9' },
-                {name: '泸州市',value: '14' },
-                {name: '德阳市',value: '1719' },
-                {name: '绵阳市',value: '76' },
-                {name: '广元市',value: '2' },
-                {name: '遂宁市',value: '29' },
-                {name: '内江市',value: '57'},
-                {name: '乐山市',value: '77' },
-                {name: '南充市',value: '22'},
-                {name: '眉山市',value: '85' },
-
-                {name: '宜宾市',value: '137' },
-                {name: '广安市',value: '909' },
-                {name: '达州市',value: '9' },
-                {name: '雅安市',value: '3' },
-                {name: '巴中市',value: '6' },
-                {name: '资阳市',value: '5' },
+                {name: '宜宾市',value: '1' },
+                {name: '广安市',value: '0' },
+                {name: '达州市',value: '0' },
+                {name: '雅安市',value: '0' },
+                {name: '巴中市',value: '605' },
+                {name: '资阳市',value: '0' },
                 {name: '阿坝藏族羌族自治州',value: '0' },
                 {name: '甘孜藏族自治州',value: '0' },
 
-                {name: '凉山彝族自治州',value: '2' }
+                {name: '凉山彝族自治州',value: '0' }
             ]
         },
         {
@@ -142,29 +139,29 @@ option = {
                 }
             },
             data:[
-                {name: '成都市',value: '98818' },
-                {name: '自贡市',value: '129'},
-                {name: '攀枝花市',value: '9' },
-                {name: '泸州市',value: '438' },
-                {name: '德阳市',value: '2' },
-                {name: '绵阳市',value: '438' },
-                {name: '广元市',value: '2' },
-                {name: '遂宁市',value: '69' },
-                {name: '内江市',value: '36' },
-                {name: '乐山市',value: '114' },
-                {name: '南充市',value: '51' },
-                {name: '眉山市',value: '914' },
+                {name: '成都市',value: '330774' },
+                {name: '自贡市',value: '2196'},
+                {name: '攀枝花市',value: '0' },
+                {name: '泸州市',value: '134' },
+                {name: '德阳市',value: '12148' },
+                {name: '绵阳市',value: '4939' },
+                {name: '广元市',value: '3523' },
+                {name: '遂宁市',value: '9019' },
+                {name: '内江市',value: '486' },
+                {name: '乐山市',value: '2282' },
+                {name: '南充市',value: '0' },
+                {name: '眉山市',value: '1740' },
 
-                {name: '宜宾市',value: '3' },
-                {name: '广安市',value: '8' },
-                {name: '达州市',value: '914' },
-                {name: '雅安市',value: '6' },
-                {name: '巴中市',value: '9' },
-                {name: '资阳市',value: '10' },
+                {name: '宜宾市',value: '1' },
+                {name: '广安市',value: '1825' },
+                {name: '达州市',value: '4283' },
+                {name: '雅安市',value: '790' },
+                {name: '巴中市',value: '605' },
+                {name: '资阳市',value: '15064' },
                 {name: '阿坝藏族羌族自治州',value: '0' },
                 {name: '甘孜藏族自治州',value: '0' },
 
-                {name: '凉山彝族自治州',value: '6' }
+                {name: '凉山彝族自治州',value: '3814' }
             ]
         }
     ]
