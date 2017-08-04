@@ -1,0 +1,23 @@
+                // {name: '成都市',value: randomData() },
+                // {name: '自贡市',value: randomData() },
+                // {name: '攀枝花市',value: randomData() },
+                // {name: '泸州市',value: randomData() },
+                // {name: '德阳市',value: randomData() },
+                // {name: '绵阳市',value: randomData() },
+                // {name: '广元市',value: randomData() },
+                // {name: '遂宁市',value: randomData() },
+                // {name: '内江市',value: randomData() },
+                // {name: '乐山市',value: randomData() },
+                // {name: '南充市',value: randomData() },
+                // {name: '眉山市',value: randomData() },
+
+                // {name: '宜宾市',value: randomData() },
+                // {name: '广安市',value: randomData() },
+                // {name: '达州市',value: randomData() },
+                // {name: '雅安市',value: randomData() },
+                // {name: '巴中市',value: randomData() },
+                // {name: '资阳市',value: randomData() },
+                // {name: '阿坝藏族羌族自治州',value: randomData() },
+                // {name: '甘孜藏族自治州',value: randomData() },
+
+                // {name: '凉山彝族自治州',value: randomData() }
