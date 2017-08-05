@@ -13,23 +13,19 @@ option = {
     },
     tooltip: {
         trigger: 'item',
-         formatter: function(params) {  
-                var res = params.name+'<br/>';  
-                var myseries = option.series;  
-                for (var i = 0; i < myseries.length; i++) {  
-                    for(var j=0;j<myseries[i].data.length;j++){  
-                        if(myseries[i].data[j].name==params.name){  
-                            res+=myseries[i].name +' : '+myseries[i].data[j].value+'</br>';  
-                        }  
-                    }  
-                }  
-                return res;  
-            }  
+        formatter: function (params) {
+            if (params.data.fromName) {
+                return params.data.fromName + " > " + params.data.toName + "  : " + params.data.value;
+            }else{
+                return  params.data.name+" : " + params.data.value;
+            }
+
+        }
+
     },
     legend: {
         orient: 'vertical',
-        left: 'left',
-        data:['第一批','第二批','总计']
+        left: 'right'
     },
     visualMap: {
         min: 0,
@@ -51,11 +47,11 @@ option = {
         }
     },
     series: [
+
         {
-            name: '第一批',
+            name: '中通',
             type: 'map',
             mapType: '四川',
-            roam: false,
             label: {
                 normal: {
                     show: true
@@ -65,105 +61,32 @@ option = {
                 }
             },
             data:[
-                {name: '成都市',value: '286464' },
-                {name: '自贡市',value: '1686' },
-                {name: '攀枝花市',value: 0  },
-                {name: '泸州市',value: '0' },
-                {name: '德阳市',value: '5599' },
-                {name: '绵阳市',value: '4939' },
-                {name: '广元市',value: '2816' },
-                {name: '遂宁市',value: '8083' },
-                {name: '内江市',value: '0' },
-                {name: '乐山市',value: '2282' },
-                {name: '南充市',value: '0' },
-                {name: '眉山市',value: '1740' },
-                 {name: '宜宾市',value: '0' },
-                {name: '广安市1',value: '1825' },
-                {name: '达州市',value: '4283' },
-                {name: '雅安市',value: '790' },
-                {name: '巴中市',value: '0' },
-                {name: '资阳市',value: '15064' },
-              {name: '阿坝藏族羌族自治州',value: '0' },
-                {name: '甘孜藏族自治州',value:'0'},
-                {name: '凉山彝族自治州',value: '3814' }
+                {name: '成都市',value: "<br>邮政：1525件<br>"+"中通：8585" },
+                {name: '自贡市',value: "<br>邮政：510件<br>"+"中通：8585" },
+                {name: '攀枝花市',value:"<br>邮政：0件<br>"+"中通：8585"  },
+                {name: '泸州市',value: "<br>邮政：134件<br>"+"中通：8585"  },
+                {name: '德阳市',value: "<br>邮政：6549件<br>"+"中通：8585"  },
+                {name: '绵阳市',value: "<br>邮政：1525件<br>"+"中通：8585"  },
+                {name: '广元市',value: "<br>邮政：707件<br>"+"中通：8585"  },
+                {name: '遂宁市',value: "<br>邮政：936件<br>"+"中通：8585"  },
+                {name: '内江市',value: "<br>邮政：486件<br>"+"中通：8585" },
+                {name: '乐山市',value: "<br>邮政：0件<br>"+"中通：8585"  },
+                {name: '南充市',value: "<br>邮政：125件<br>"+"中通：8585" },
+                {name: '眉山市',value: "<br>邮政：825件<br>"+"中通：8585"  },
+
+                {name: '宜宾市',value: "<br>邮政：1525件<br>"+"中通：8585"  },
+                {name: '广安市',value: "<br>邮政：852件<br>"+"中通：8585"  },
+                {name: '达州市',value: "<br>邮政：4525件<br>"+"中通：8585"  },
+                {name: '雅安市',value: "<br>邮政：4525件<br>"+"中通：8585"  },
+                {name: '巴中市',value: "<br>邮政：1585件<br>"+"中通：8585"  },
+                {name: '资阳市',value: "<br>邮政：1755件<br>"+"中通：8585"  },
+                {name: '阿坝藏族羌族自治州',value: "<br>邮政：4525件<br>"+"中通：8585"  },
+                {name: '甘孜藏族自治州',value: "<br>邮政：758件<br>"+"中通：8585"  },
+
+                {name: '凉山彝族自治州',value: "<br>邮政：7852件<br>"+"中通：8585"  }
             ]
         },
-        {
-            name: '第二批',
-            type: 'map',
-            mapType: '四川',
-            label: {
-                normal: {
-                    show: true
-                },
-                emphasis: {
-                    show: true
-                }
-            },
-            data:[
-                {name: '成都市',value: '44310' },
-                {name: '自贡市',value: '510' },
-                {name: '攀枝花市',value: '0' },
-                {name: '泸州市',value: '134' },
-                {name: '德阳市',value: '6549' },
-                {name: '绵阳市',value: '0' },
-                {name: '广元市',value: '707' },
-                {name: '遂宁市',value: '936' },
-                {name: '内江市',value: '486'},
-                {name: '乐山市',value: '0' },
-                {name: '南充市',value: '0'},
-                {name: '眉山市',value: '0' },
-
-                {name: '宜宾市',value: '1' },
-                {name: '广安市',value: '0' },
-                {name: '达州市',value: '0' },
-                {name: '雅安市',value: '0' },
-                {name: '巴中市',value: '605' },
-                {name: '资阳市',value: '0' },
-                {name: '阿坝藏族羌族自治州',value: '0' },
-                {name: '甘孜藏族自治州',value: '0' },
-
-                {name: '凉山彝族自治州',value: '0' }
-            ]
-        },
-        {
-            name: '总计',
-            type: 'map',
-            mapType: '四川',
-            label: {
-                normal: {
-                    show: true
-                },
-                emphasis: {
-                    show: true
-                }
-            },
-            data:[
-                {name: '成都市',value: '330774' },
-                {name: '自贡市',value: '2196'},
-                {name: '攀枝花市',value: '0' },
-                {name: '泸州市',value: '134' },
-                {name: '德阳市',value: '12148' },
-                {name: '绵阳市',value: '4939' },
-                {name: '广元市',value: '3523' },
-                {name: '遂宁市',value: '9019' },
-                {name: '内江市',value: '486' },
-                {name: '乐山市',value: '2282' },
-                {name: '南充市',value: '0' },
-                {name: '眉山市',value: '1740' },
-
-                {name: '宜宾市',value: '1' },
-                {name: '广安市',value: '1825' },
-                {name: '达州市',value: '4283' },
-                {name: '雅安市',value: '790' },
-                {name: '巴中市',value: '605' },
-                {name: '资阳市',value: '15064' },
-                {name: '阿坝藏族羌族自治州',value: '0' },
-                {name: '甘孜藏族自治州',value: '0' },
-
-                {name: '凉山彝族自治州',value: '3814' }
-            ]
-        }
+        
     ]
 };
 
