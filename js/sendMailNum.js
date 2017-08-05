@@ -117,18 +117,19 @@ var geoCoordMap = {
 };
 
 var BJData = [
-    [{name:'成都'}, {name:'宁波',value:95}],
-    [{name:'成都'}, {name:'广州',value:95}],
+    [{name:'成都'}, {name:'宁波',value:95,Cpvalue:"<br>邮政:19480件<br>"+"中通：512.9件<br>"}],
+    [{name:'成都'}, {name:'广州',value:95,Cpvalue:"<br>邮政:1947件<br>"+"中通：559件<br>"}],
 ];
 
 var SHData = [
-    [{name:'成都'},{name:'苏州',value:95}],
-    [{name:'成都'},{name:'杭州',value:95}],
+    [{name:'成都'},{name:'苏州',value:95,Cpvalue:"<br>邮政:1948件<br>"+"中通：51.9件<br>"}],
+    [{name:'成都'},{name:'杭州',value:95,Cpvalue:"<br>邮政:19485件<br>"+"中通：55858件<br>"}],
 ];
 
 var GZData = [
-    [{name:'成都'},{name:'武汉',value:95}],
+    [{name:'成都'},{name:'武汉',value:95,Cpvalue:"<br>邮政:19485件<br>"+"中通：519件<br>"}],
 ];
+
 
 var planePath = 'path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z';
 
@@ -142,6 +143,7 @@ var convertData = function (data) {
             res.push({
                 fromName: dataItem[0].name,
                 toName: dataItem[1].name,
+                Cpvalue:dataItem[1].Cpvalue,
                 coords: [fromCoord, toCoord]
             });
         }
@@ -168,7 +170,17 @@ var series = [];
                 normal: {
                     show: true,
                     position: 'right',
-                    formatter: '{b}'
+                    formatter: '{b}',
+                    textStyle:{
+                        color:'#000'
+                    }
+
+                },
+                emphasis:{
+                    textStyle:{
+                        color:'#000',
+                        fontSize:12
+                    }
                 }
             },
             lineStyle: {
@@ -181,12 +193,29 @@ var series = [];
             data: convertData(item[1])
         },
         {
-            name: item[0],
+            name: item[1],
             type: 'lines',
             coordinateSystem:'geo',
             zlevel: 2,
             symbol: ['none', 'arrow'],
             symbolSize: 10,
+            label: {
+                normal: {
+                    show: true,
+                    position: 'right',
+                    formatter: '{b}',
+                    textStyle:{
+
+                    }
+
+                },
+                emphasis:{
+                    textStyle:{
+
+                        fontSize:12
+                    }
+                }
+            },
             effect: {
                 show: true,
                 period: 6,
@@ -216,7 +245,17 @@ var series = [];
                 normal: {
                     show: true,
                     position: 'right',
-                    formatter: '{b}'
+                    formatter: '{b}',
+                    textStyle:{
+
+                    }
+
+                },
+                emphasis:{
+                    textStyle:{
+
+                        fontSize:12
+                    }
                 }
             },
             symbolSize: function (val) {
@@ -239,15 +278,29 @@ var series = [];
 option = {
     backgroundColor: '#404a59',
     title : {
-        text: '模拟迁徙',
-        subtext: '数据纯属虚构',
+        text: '全国重点城市业务量对比',
+        subtext: '中通vs邮政',
         left: 'center',
         textStyle : {
-            color: '#fff'
+            color: '#fff',
+            fontSize:'40',
+            fontWeight:'bolder'
+        },
+        subtextStyle:{
+            fontSize:'30',
+            color:'#fff'
         }
     },
     tooltip : {
-        trigger: 'item'
+        trigger: 'item',
+        formatter: function (params) {
+            if (params.data.fromName) {
+                return params.data.fromName + " > " + params.data.toName + "  : " + params.data.Cpvalue;
+            }else{
+                return params.name + "<br/>邮政日处理件量：" + params.value[2];
+            }
+
+        }
     },
     legend: {
         orient: 'vertical',
@@ -263,7 +316,19 @@ option = {
         map: 'china',
         label: {
             normal: {
-                show: true
+                show: true,
+
+
+                textStyle:{
+                    color:'#fff'
+                }
+
+            },
+            emphasis:{
+                textStyle:{
+                    color:'#FFFFFF',
+                    fontSize:12
+                }
             }
         },
         roam: true,
