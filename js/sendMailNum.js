@@ -1,4 +1,4 @@
-var myChart = echarts.init(document.getElementById('main'));
+var myChart = echarts.init(document.getElementById('sendNum'));
 var geoCoordMap = {
     '上海': [121.4648,31.2891],
     '东莞': [113.8953,22.901],

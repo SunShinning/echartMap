@@ -5,43 +5,77 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title></title>
     <style>
+        body,html{
+            width:100%;
+            height:100%;
+        }
+        #myTabs{
+            width:100%;
+            height:20%;
+        }
+        .tab-content{
+            height:750px;
+        }
         .tab-content div{
-            width: 1000px;
-            margin:100%;
-            height: 500px;
+            color: #000;
+            text-align: center;
+            width:100%;
+            height:100%;
         }
     </style>
 </head>
 <body>
 <div>
+    <ul>
+        <li>
+            <a href="time.html" target="_blank">全国城市时效对比</a>
+        </li>
+        <li>
+            <a href="price.html" target="_blank">全国城市价格对比</a>
+        </li>
+        <li>
+            <a href="sendMailNum.html" target="_blank">全国城市发件量对比</a>
+        </li> <li>
+        <a href="pro_time.html" target="_blank">四川省城市时效对比</a>
+    </li>
+        <li>
+            <a href="pro_sendMailNum.html" target="_blank">四川省城市发件量对比</a>
+        </li> <li>
+        <a href="price.html">全国邮局中通发件统计</a>
+    </li>
+
+
+    </ul>
 
     <!-- Nav tabs -->
     <ul class="nav nav-tabs" role="tablist" id="myTabs">
-        <li role="presentation" class="active"><a href="#time" aria-controls="time" role="tab" data-toggle="tab">全国城市时效对比</a></li>
-        <li role="presentation"><a href="#price" aria-controls="price" role="tab" data-toggle="tab">全国城市价格对比</a></li>
-        <li role="presentation"><a href="#sendNum" aria-controls="sendNum" role="tab" data-toggle="tab">全国城市发件量对比</a></li>
-        <li role="presentation" class=""><a href="#pro-time" aria-controls="pro-time" role="tab" data-toggle="tab">四川省城市时效对比</a></li>
-        <li role="presentation"><a href="#pro-sendNum" aria-controls="pro-sendNum" role="tab" data-toggle="tab">四川省城市发件量对比</a></li>
-        <li role="presentation"><a href="#china-post" aria-controls="china-pos" role="tab" data-toggle="tab">全国邮局中通发件统计</a></li>
-        <li role="presentation"><a href="#pro-price" aria-controls="pro-price" role="tab" data-toggle="tab">四川省城市价格对比</a></li>
-        <li role="presentation"><a href="#pro-post" aria-controls="pro-post" role="tab" data-toggle="tab">四川省邮局中通发件统计</a></li>
-        <li role="presentation"><a href="#all-totall" aria-controls="all-totall" role="tab" data-toggle="tab">转点</a></li>
+        <li role="presentation" href="time.html"  class="active" ><a href="time.html" >全国城市时效对比</a></li>
+        <li role="presentation"><a href="price.html" >全国城市价格对比</a></li>
+        <li role="presentation"><a href="#sendNum" >全国城市发件量对比</a></li>
+        <li role="presentation" class=""><a href="#pro-time" >四川省城市时效对比</a></li>
+        <li role="presentation"><a href="#pro-sendNum" >四川省城市发件量对比</a></li>
+        <li role="presentation"><a href="#china-post" >全国邮局中通发件统计</a></li>
+        <li role="presentation"><a href="#pro-price" >四川省城市价格对比</a></li>
+        <li role="presentation"><a href="#pro-post">四川省邮局中通发件统计</a></li>
+        <li role="presentation"><a href="#all-totall" >转点</a></li>
     </ul>
 
     <!-- Tab panes -->
-    <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="time">
-            <!--<iframe src="time.html" width="100%" height="100%" frameborder="0"></iframe>-->
-        </div>
-        <div role="tabpanel" class="tab-pane" id="price">2</div>
-        <div role="tabpanel" class="tab-pane" id="sendNum">3</div>
-        <div role="tabpanel" class="tab-pane" id="pro-time">4</div>
-        <div role="tabpanel" class="tab-pane " id="pro-price">5</div>
-        <div role="tabpanel" class="tab-pane" id="pro-sendNum">6</div>
-        <div role="tabpanel" class="tab-pane" id="china-post">7</div>
-        <div role="tabpanel" class="tab-pane" id="pro-post">8</div>
-        <div role="tabpanel" class="tab-pane" id="all-totall">9</div>
-    </div>
+    <!--<div class="tab-content">-->
+        <!--<div role="tabpanel" class="tab-pane active" id="time">1-->
+
+        <!--</div>-->
+        <!--<div role="tabpanel" class="tab-pane " id="price">2-->
+
+        <!--</div>-->
+        <!--<div role="tabpanel" class="tab-pane" id="sendNum"> </div>-->
+        <!--<div role="tabpanel" class="tab-pane" id="pro-time">4</div>-->
+        <!--<div role="tabpanel" class="tab-pane " id="pro-price">5</div>-->
+        <!--<div role="tabpanel" class="tab-pane" id="pro-sendNum">6</div>-->
+        <!--<div role="tabpanel" class="tab-pane" id="china-post">7</div>-->
+        <!--<div role="tabpanel" class="tab-pane" id="pro-post">8</div>-->
+        <!--<div role="tabpanel" class="tab-pane" id="all-totall">9</div>-->
+    <!--</div>-->
 
 </div>
 
@@ -53,8 +87,10 @@
 <script src="js/bmap.js"></script>
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=0UqXGL98FSmi22w2Rl6HK56I"></script>
 <script src="js/data.js"></script>
-<!--<script src="js/price.js"></script>-->
 <script src="js/time.js"></script>
+<script src="js/price.js"></script>
+<script src="js/sendMailNum.js"></script>
+
 <script src="js/bootstrap.min.js"></script>
 <script>
 

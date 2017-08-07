@@ -23,11 +23,11 @@ var geoCoordMap = {
 };
 
 var BJData = [
-    [{name:'成都'}, {name:'广元',value:95,Cpvalue:"<br>邮政：52852件<br>"+"￥中通：522件<br>"}],
+    [{name:'成都'}, {name:'广元',value:95,Cpvalue:"<br>邮政：52852件<br>"+"中通：522件<br>"}],
 
-    [{name:'成都'},{name:'绵阳',value:95,Cpvalue:"<br>邮政：52652件<br>"+"￥中通：522件<br>"}],
-    [{name:'成都'},{name:'雅安',value:95,Cpvalue:"<br>邮政：52572件<br>"+"￥中通：552件<br>"}],
-    [{name:'成都'},{name:'德阳',value:95,Cpvalue:"<br>邮政：52527件<br>"+"￥中通：452件<br>"}],
+    [{name:'成都'},{name:'绵阳',value:95,Cpvalue:"<br>邮政：52652件<br>"+"中通：522件<br>"}],
+    [{name:'成都'},{name:'雅安',value:95,Cpvalue:"<br>邮政：52572件<br>"+"中通：552件<br>"}],
+    [{name:'成都'},{name:'德阳',value:95,Cpvalue:"<br>邮政：52527件<br>"+"中通：452件<br>"}],
 
     [{name:'成都'}, {name:'阿坝州',value:95,Cpvalue:"<br>邮政：54252件<br>"+"中通：75252件<br>"}],
     [{name:'成都'},{name:'达州',value:95,Cpvalue:"<br>邮政：35252件<br>"+"中通：58252件<br>"}],
@@ -194,7 +194,7 @@ var series = [];
 option = {
     backgroundColor: '#404a59',
     title : {
-        text: '四川重点城市价格对比',
+        text: '四川重点城市发件量对比',
         subtext: '中通vs邮政',
         left: 'center',
         textStyle : {
