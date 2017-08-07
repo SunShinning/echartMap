@@ -156,15 +156,15 @@ var GZData = [
 ];
 var fdData = [
     [{name:'成都'},{name:"上海",value:95,Cpvalue:"中转"},{name:'杭州',value:100,Cpvalue:"成都>杭州<br>总单数:1948<br>"+"总计时间：51.9<br>"+"揽收时间:1.49"}],
-    [{name:'成都'},{name:"绍兴",value:90,Cpvalue:"中转"},{name:'宁波',value:100,Cpvalue:"总单数:456<br>"+"总计时间：51.9<br>"+"揽收时间:1.49"}],
-    [{name:'成都'},{name:"南京",value:80,Cpvalue:"中转"},{name:'苏州',value:100,Cpvalue:"总单数:456<br>"+"总计时间：51.9<br>"+"揽收时间:1.49"}],
-    [{name:'成都'},{name:"北京",value:70,Cpvalue:"中转"},{name:'西安',value:100,Cpvalue:"总单数:645<br>"+"总计时间：51.9<br>"+"揽收时间:1.49"}],
-    [{name:'成都'},{name:"珠海",value:60,Cpvalue:"中转"},{name:'广州',value:100,Cpvalue:"总单数:467<br>"+"总计时间：51.9<br>"+"揽收时间:1.49"}],
-    [{name:'成都'},{name:"北京",value:50,Cpvalue:"中转"},{name:'武汉',value:100,Cpvalue:"总单数:17<br>"+"总计时间：51.9<br>"+"揽收时间:1.49"}],
-    [{name:'成都'},{name:"郑州",value:40,Cpvalue:"中转"},{name:'常州',value:100,Cpvalue:"总单数:25<br>"+"总计时间：51.9<br>"+"揽收时间:1.49"}],
-    [{name:'成都'},{name:"北海",value:30,Cpvalue:"中转"},{name:'北京',value:100,Cpvalue:"总单数:65<br>"+"总计时间：51.9<br>"+"揽收时间:1.49"}],
-    [{name:'成都'},{name:"海口",value:20,Cpvalue:"中转"},{name:'北海',value:100,Cpvalue:"总单数:78<br>"+"总计时间：51.9<br>"+"揽收时间:1.49"}],
-    [{name:'成都'},{name:"福州",value:10,Cpvalue:"中转"},{name:'海口',value:100,Cpvalue:"总单数:789<br>"+"总计时间：51.9<br>"+"揽收时间:1.49"}]
+    [{name:'成都'},{name:"绍兴",value:90,Cpvalue:"中转"},{name:'宁波',value:100,Cpvalue:"成都>宁波<br>总单数:456<br>"+"总计时间：51.9<br>"+"揽收时间:1.49"}],
+    [{name:'成都'},{name:"南京",value:80,Cpvalue:"中转"},{name:'苏州',value:100,Cpvalue:"成都>苏州<br>总单数:456<br>"+"总计时间：51.9<br>"+"揽收时间:1.49"}],
+    [{name:'成都'},{name:"北京",value:70,Cpvalue:"中转"},{name:'西安',value:100,Cpvalue:"成都>西安<br>总单数:645<br>"+"总计时间：51.9<br>"+"揽收时间:1.49"}],
+    [{name:'成都'},{name:"珠海",value:60,Cpvalue:"中转"},{name:'广州',value:100,Cpvalue:"成都>广州<br>总单数:467<br>"+"总计时间：51.9<br>"+"揽收时间:1.49"}],
+    [{name:'成都'},{name:"北京",value:50,Cpvalue:"中转"},{name:'武汉',value:100,Cpvalue:"成都>武汉<br>总单数:17<br>"+"总计时间：51.9<br>"+"揽收时间:1.49"}],
+    [{name:'成都'},{name:"郑州",value:40,Cpvalue:"中转"},{name:'常州',value:100,Cpvalue:"成都>常州<br>总单数:25<br>"+"总计时间：51.9<br>"+"揽收时间:1.49"}],
+    [{name:'成都'},{name:"北海",value:30,Cpvalue:"中转"},{name:'北京',value:100,Cpvalue:"成都>北京<br>总单数:65<br>"+"总计时间：51.9<br>"+"揽收时间:1.49"}],
+    [{name:'成都'},{name:"海口",value:20,Cpvalue:"中转"},{name:'北海',value:100,Cpvalue:"成都>北海<br>总单数:78<br>"+"总计时间：51.9<br>"+"揽收时间:1.49"}],
+    [{name:'成都'},{name:"福州",value:10,Cpvalue:"中转"},{name:'海口',value:100,Cpvalue:"成都>海口<br>总单数:789<br>"+"总计时间：51.9<br>"+"揽收时间:1.49"}]
 ];
 var planePath = 'path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z';
 
@@ -205,7 +205,7 @@ var convertData2 = function (data) {
 };
 var color = ['#a6c84c', '#ffa022', '#46bee9'];
 var series = [];
-[["123",fdData]].forEach(function (item, i) {
+[["北京",fdData]].forEach(function (item, i) {
     console.log(item[1][0][0].value)
     series.push(
         {
@@ -255,7 +255,7 @@ var series = [];
 
         },
         {
-            name: item[0] + ' Top10',
+            name: item[0] ,
             type: 'effectScatter',
             coordinateSystem: 'bmap',
             zlevel: 2,
