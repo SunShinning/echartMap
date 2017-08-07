@@ -218,7 +218,7 @@ option = {
     },
     legend: {
         orient: 'vertical',
-        top: 'bottom',
+        top: 'top',
         left: 'right',
         data:['邮政领先', '二者持平', '邮政落后'],
         textStyle: {
